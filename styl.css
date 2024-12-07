@@ -9,18 +9,44 @@ html, input {
 body,
 html {
     overflow-x: hidden;
-    width: 100vw;
+    width: auto;
     height: auto;
 }
-
+#przycisk2 {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 5px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 13px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+  }
+#przycisk2:hover {
+    background-color: #f7fafa;
+  }
+  
+#przycisk2:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+  }
 .snow-container {
     position: fixed;
     top: 0;
     left: 0;
     overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    z-index: auto;
     pointer-events: none;
 }
 
@@ -60,26 +86,26 @@ html {
     }
 }
 header {
-    margin-top:55px;
+    margin-top:2%;
     text-align: center;
     color:white;
 }
 #glowny {
     text-align: center;
     color:white;
-    margin-top:500px;
+    margin-top:8%;
 }
 
-.button-8 {
+#przycisk {
   background-color: #e1ecf4;
-  border-radius: 3px;
+  border-radius: 5px;
   border: 1px solid #7aa7c7;
   box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
   box-sizing: border-box;
   color: #39739d;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-family: system-ui,"Segoe UI","Liberation Sans",sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 1.15385;
@@ -88,29 +114,38 @@ header {
   padding: 8px .8em;
   position: relative;
   text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   vertical-align: baseline;
   white-space: nowrap;
 }
 
-.button-8:hover,
-.button-8:focus {
+#przycisk:hover,
+#przycisk:focus {
   background-color: #b3d3ea;
   color: #2c5777;
 }
 
-.button-8:focus {
+#przycisk:focus {
   box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
 }
 
-.button-8:active {
+#przycisk:active {
   background-color: #a0c7e4;
   box-shadow: none;
   color: #2c5777;
 }
 p{
     text-align:center;
+}
+#pasek{
+    color:white;
+}
+#kalendarzodn{
+    color:white;
+    margin-right: 15%;
+    float:right;
+}
+#Mikołajkiodn{
+    color:white;
+    margin-left: 15%;
+    float:left;
 }
